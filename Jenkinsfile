@@ -3,6 +3,7 @@ pipeline {
     stages {
         stage("Build"){
             steps{
+                sh 'sudo -i'
                 sh 'mvn -DskpTests clean package'
             }
         }
